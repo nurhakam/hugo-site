@@ -1,0 +1,57 @@
+baseURL = "https://hakam.my.id"
+title = "Hakamatsuri"
+theme = "hugo-notepadium"
+
+languageCode = "id"  # for the RSS generation
+defaultContentLanguage = "id"
+
+hasCJKLanguage = true
+
+enableRobotsTXT = true
+
+# Enable Disqus
+#disqusShortname = "XXX"
+
+# Google Analytics
+#googleAnalytics = "UA-123-45"
+
+[markup.highlight]
+codeFences = true
+noClasses = false
+
+[markup.goldmark.renderer]
+unsafe = true  # enable raw HTML in Markdown
+
+[params]
+style = "light"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+dateFormat = "02 Jan 2006"  # if unset, default is "2006-01-02"
+readingTime = true  # show reading time after article date
+logo = ""  # if you have a logo png
+slogan = ""
+license = ""  # CC License
+fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, default is false.
+
+[params.assets]
+css = ["css/fonts.css"]
+
+[params.comments]
+enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
+
+[params.math]
+enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
+use = "katex"  # option: "katex", "mathjax". default: "katex"
+
+[params.syntax]
+use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
+theme = "xcode"
+darkTheme = "xcode-dark"  # apply this theme in dark mode
+
+[params.nav]
+showCategories = true       # /categories/
+showTags = true            # /about/
+showAbout = true            # /about/
+
+# custom navigation items
+[[params.nav.custom]]
+title = ""
+url = ""
