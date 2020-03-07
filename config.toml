@@ -1,4 +1,4 @@
-baseURL = "https://hakam.my.id"
+baseURL = "https://hakam.netlify.com"
 title = "Hakamatsuri"
 
 [permalinks]
