@@ -57,6 +57,6 @@ showTags = true            # /about/
 showAbout = true            # /about/
 
 # custom navigation items
-[[params.nav.custom]]
-title = ""
-url = ""
+# [[params.nav.custom]]
+# title = ""
+# url = ""
