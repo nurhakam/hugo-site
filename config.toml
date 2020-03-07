@@ -1,6 +1,5 @@
 baseURL = "https://hakam.my.id"
 title = "Hakamatsuri"
-theme = "hugo-notepadium"
 
 languageCode = "id"  # for the RSS generation
 defaultContentLanguage = "id"

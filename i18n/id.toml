@@ -1,0 +1,18 @@
+[edited]
+other = " • diubah %s"
+
+[readingTime]
+one = " • Satu menit bacaan"
+other = " • {{ .Count }} menit bacaan"
+
+[more]
+other = "selengkapnya"
+
+[About]
+other = "Tentang"
+
+[Categories]
+other = "Kategori"
+
+[Tags]
+other = "Tags"

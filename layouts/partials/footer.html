@@ -1,0 +1,8 @@
+<section id="footer" class="footer">
+        <p>&copy; {{ now.Format "2006"}} {{ .Site.Title }}</p>
+        <p>Dibuat & ditulis dengan ❤</p>
+</section>
+{{- partial "math.html" . -}}
+{{- partial "syntax.html" . -}}
+{{- template "_internal/google_analytics_async.html" . -}}
+{{- partial "custom-js.html" . -}}
