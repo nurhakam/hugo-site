@@ -1,0 +1,11 @@
+<script>
+    var mainNav = document.querySelector('nav-container');
+
+    window.onscroll = function() {
+      windowScroll();
+    };
+    
+    function windowScroll() {
+        mainNav.classList.toggle("nav scroll", mainNav.scrollTop > 50 || document.documentElement.scrollTop > 50);
+    }
+</script>
