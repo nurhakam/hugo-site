@@ -2,12 +2,12 @@
 <html lang="{{- site.Language.Lang -}}">
 <head>{{- partial "head.html" . -}}</head>
 
-<body>
-    <div class="base-body">
+<body class="theme">
+    <div id="gatsby-focus-wrapper" style="outline:none" tabindex="-1">
         {{- partial "header.html" . -}}
-        <div id="content">
+        <main id="main-content">
             {{- block "main" . -}}{{- end -}}
-        </div>
+        </main>
         {{- partial "footer.html" . -}}
     </div>
 </body>

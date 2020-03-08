@@ -8,8 +8,6 @@ title = "Hakamatsuri"
 languageCode = "id"  # for the RSS generation
 defaultContentLanguage = "id"
 
-hasCJKLanguage = true
-
 enableRobotsTXT = true
 
 # Enable Disqus
@@ -29,7 +27,7 @@ unsafe = true  # enable raw HTML in Markdown
 style = "light"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
 dateFormat = "02 Jan 2006"  # if unset, default is "2006-01-02"
 readingTime = true  # show reading time after article date
-logo = ""  # if you have a logo png
+logo = "/logos/logo.png"  # if you have a logo png
 slogan = ""
 description = "Blog personal yang berisi catatan dan ke-random-an seorang manusia"
 author = "Hakam"
@@ -53,7 +51,7 @@ darkTheme = "xcode-dark"  # apply this theme in dark mode
 
 [params.nav]
 showCategories = true       # /categories/
-showTags = true            # /about/
+showTags = true            # /tags/
 showAbout = true            # /about/
 
 # custom navigation items

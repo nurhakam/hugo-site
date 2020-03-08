@@ -1,6 +1,7 @@
 <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
 {{- hugo.Generator -}}
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="color-scheme" content="light dark">
 <meta name="supported-color-schemes" content="light dark">
 <link rel="canonical" href="{{ .Permalink }}" />
@@ -21,6 +22,7 @@
 <meta property="article:section" content="{{ . }}">
 {{ end }}
 
-{{- partial "style.html" . -}}
+{{ $styles := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 {{- partial "rss-feed.html" . -}}
 {{- partial "head-extra.html" . -}}

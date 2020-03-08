@@ -29,7 +29,6 @@
         "inLanguage" : "id-ID",
         "author" : "{{ .Site.Params.author }}",
         "creator" : "{{ .Site.Params.author }}",
-        "publisher": "{{ .Site.Params.author }}",
         "accountablePerson" : "{{ .Site.Params.author }}",
         "copyrightHolder" : "{{ .Site.Params.author }}",
         "copyrightYear" : "{{ .Date.Format "2006" }}",
@@ -38,6 +37,10 @@
         "url" : "{{ .Permalink }}",
         "wordCount" : "{{ .WordCount }}",
         "keywords" : [ {{ if isset .Params "tags" }}{{ range .Params.tags }}"{{ . }}",{{ end }}{{ end }}"Blog" ]
+        "image": {
+            "@type": "imageObject",
+            "url": "{{ with .Params.image }}{{ .Permalink }}{{ end }}"
+          },
     }
     </script>
 {{ end }}

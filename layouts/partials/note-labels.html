@@ -1,12 +1,10 @@
 {{- if or .Params.categories .Params.tags -}}
-    <p class="note labels">
         {{- range .Params.categories -}}
             {{- $url := print "/categories/" (. | urlize) "/" -}}
-            <a class="category" href="{{- $url | relLangURL -}}">{{- . -}}</a>
+            <a href="{{- $url | relLangURL -}}"><span>{{- . -}}</span></a>
         {{- end -}}
         {{- range .Params.tags -}}
             {{- $url := print "/tags/" (. | urlize) "/" -}}
-            <a class="tag" href="{{- $url | relLangURL -}}">{{- . -}}</a>
+            <a href="{{- $url | relLangURL -}}"><span>{{- . -}}</span></a>
         {{- end -}}
-    </p>
 {{- end -}}

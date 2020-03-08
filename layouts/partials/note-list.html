@@ -1,33 +1,23 @@
+<section class="posts simple">
 {{- $paginator := . -}}
 
 {{- if gt $paginator.TotalPages 0 -}}
 {{- $dateFormat := site.Params.dateFormat -}}
 {{- if not $dateFormat -}}{{- $dateFormat = "2006-01-02" -}}{{- end -}}
-<ul class="note list">
     {{- range $paginator.Pages -}}
-    <li class="item"><a class="note" href="{{- .RelPermalink -}}">
-            <p class="note title">{{- .Title | safeHTML -}}</p>
-            {{- if .Date -}}
-                <p class="note date">{{- .Date.Format $dateFormat -}}</p>
-            {{- end -}}
-            {{- if .Summary -}}<p class="note content">{{- .Summary | plainify | safeHTML -}}{{- if .Truncated -}}<span class="mldr">&mldr;{{- T "more" -}}</span>{{- end -}}</p>{{- end -}}
-            {{- $relURL := .RelPermalink -}}
-            {{- $imgs := .Params.imgs -}}
-            {{- with .Params.imgs -}}
-                <span class="note imgs">
-                    {{- $imgCount := len $imgs -}}
-                    {{- range $imgs -}}
-                    {{- $imgurl := lower . -}}
-                    {{- if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) -}}
-                    {{- $imgurl = path.Join $relURL . -}}
-                    {{- end -}}
-                    <img class="img" src="{{- $imgurl -}}" alt />
-                    {{- end -}}
-                </span>
-            {{- end -}}
+    <a href="{{- .RelPermalink -}}">
+        <div class="each">
+            <div class=" gatsby-image-wrapper" style="position: relative; overflow: hidden; display: inline-block; width: 150px; height: 150px;">
+                {{if isset .Params "img" }}<img aria-hidden="true" src="{{ index .Params "img" }}" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1; transition: opacity 500ms ease 0s;" width="150" height="150">{{ end }}
+            </div>
+            <div class="each-list-item">
+                <h2>{{- .Title | safeHTML -}}</h2>
+            </div>
+            <div class="alert">
+                <div class="new">New!</div>
+            </div>
+        </div>
         </a>
-        {{- partial "note-labels.html" . -}}
-    </li>
     {{- end -}}
-</ul>
 {{- end -}}
+</section>
