@@ -1,3 +1,15 @@
-<!--
-    for user-side override
--->
+<script>
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 20) {
+    $('nav').addClass('scroll');
+  } else {
+    $('nav').removeClass('scroll');
+  }
+});
+
+    $(document).ready(function(){
+    $('.dark-switcher').on('click', function(e){
+      $('.theme').toggleClass('dark');
+    });
+});
+</script>

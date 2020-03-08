@@ -1,12 +1,12 @@
 baseURL = "https://hakam.netlify.com"
 title = "Hakamatsuri"
 
-[permalinks]
-    posts = "/blog/:title/"
-    lirik = "/lirik/:title/"
-
 languageCode = "id"  # for the RSS generation
 defaultContentLanguage = "id"
+
+[permalinks]
+posts = "/blog/:title/"
+lirik = "/lirik/:title/"
 
 enableRobotsTXT = true
 

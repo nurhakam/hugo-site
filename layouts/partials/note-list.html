@@ -8,9 +8,10 @@
     <a href="{{- .RelPermalink -}}">
         <div class="each">
             <div class="gatsby-image-wrapper" style="position: relative; overflow: hidden; display: inline-block; width: 150px; height: 150px;">
-                <!-- 
-                {{if isset .Params "img" }}<img aria-hidden="true" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1; transition: opacity 500ms ease 0s;" width="150" height="150" src="{{- index .Params "img" -}}">{{ end }}
-                -->
+                {{if isset .Params "img" }}
+                {{- $img := index .Params "img" -}}
+                <img src="{{- $img -}}" aria-hidden="true" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1; transition: opacity 500ms ease 0s;" width="150" height="150">
+                {{ end }}
             </div>
             <div class="each-list-item">
                 <h2>{{- .Title | safeHTML -}}</h2>
