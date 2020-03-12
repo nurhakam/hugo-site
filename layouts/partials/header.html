@@ -4,7 +4,7 @@
                 <a href="{{- `/` | relLangURL -}}">
                 {{- $logo := site.Params.logo -}}
                 {{- if $logo -}}
-                <img class="favicon" src="{{- $logo | relURL -}}" alt />
+                <img class="favicon" src="{{- $logo | relURL -}}" alt="{{- site.Title | safeHTML -}}"/>
                 {{- end -}}
                 <span class="text">{{- site.Title | safeHTML -}}</span></a>
         </div>
