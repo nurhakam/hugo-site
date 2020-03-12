@@ -8,4 +8,4 @@
 <!-- Javascript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
 {{- $coreJS := resources.Get "js/main.js" | minify | fingerprint -}}
-<script src="{{- $coreJS.RelPermalink -}}" integrity="{{- $coreJS.Data.Integrity -}}"></script>
+<script src="{{- $coreJS.RelPermalink -}}"></script>
