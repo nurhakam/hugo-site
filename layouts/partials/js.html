@@ -1,17 +1,17 @@
 <script>
-
+// shrink navbar when scrolling
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   var nav = document.querySelector(".nav");
-  if (document.body.scrollTop > 20) {
-    nav.classList.add("scroll");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    nav.classList.add('scroll');
   } else {
-    nav.classList.remove("scroll");
+     nav.classList.remove('scroll');
   }
 };
 
-// light and dark theme variable
+// light and dark theme variables
 var themeIcon = document.querySelector(".theme-icon");
 var darkIcon = "/img/moon.svg";
 var lightIcon = "/img/sun.svg";
