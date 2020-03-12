@@ -8,8 +8,8 @@
     <a href="{{- .RelPermalink -}}">
         <div class="each">
             <div class="gatsby-image-wrapper">
-                {{if isset .Params "img" }}
-                {{- $img := index .Params "img" -}}
+                {{if isset .Params "imgs" }}
+                {{- $img := index .Params "imgs" -}}
                 <img src="{{- $img -}}" style="width: 100%;">
                 {{ end }}
             </div>

@@ -2,7 +2,10 @@
         <div>&copy; {{ now.Format "2006"}} {{ .Site.Title }}</div>
         <div>{{ T "copyright" }}</div>
 </footer>
-{{- partial "syntax.html" . -}}
+
 {{- template "_internal/google_analytics_async.html" . -}}
+
+<!-- Javascript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
-{{- partial "custom-js.html" . -}}
+{{- $coreJS := resources.Get "js/main.js" | resources.Minify | resources.Fingerprint "sha384" -}}
+<script src="{{- $coreJS.RelPermalink -}}" integrity="{{- $coreJS.Data.Integrity -}}"></script>

@@ -1,8 +1,7 @@
-
 <header class="single-header">
     <div>
-        {{if isset .Params "img" }}
-        {{- $img := index .Params "img" -}}
+        {{if isset .Params "imgs" }}
+        {{- $img := index .Params "imgs" -}}
         <img src="{{- $img -}}" width="150">
         {{ end }}
     </div>

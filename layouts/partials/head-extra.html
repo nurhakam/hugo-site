@@ -39,7 +39,7 @@
         "keywords" : [ {{ if isset .Params "tags" }}{{ range .Params.tags }}"{{ . }}",{{ end }}{{ end }}"Blog" ]
         "image": {
             "@type": "imageObject",
-            "url": "{{ with .Params.image }}{{ .Permalink }}{{ end }}"
+            "url": "{{if isset .Params "imgs" }}{{- $img := index .Params "imgs" -}}{{- $img -}}{{ end }}"
           },
     }
     </script>

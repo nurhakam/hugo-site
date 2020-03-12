@@ -1,7 +1,7 @@
 +++
 title = "My First Post"
 date = "2020-03-06T02:34:58+07:00"
-img= "/thumbnails/apache.png"
+imgs = "/thumbnails/apache.png"
 +++
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae odio malesuada, sodales nulla id, imperdiet erat. In consectetur vestibulum enim, non cursus arcu. Nullam lobortis eros vitae neque efficitur molestie sit amet ut orci. Nam hendrerit tincidunt nisl ut consectetur. In vitae elit accumsan, ultrices nunc id, fringilla urna. Vivamus pulvinar metus lectus, eget bibendum nulla iaculis non. Fusce nulla eros, sagittis id augue ut, pretium tincidunt nulla. Donec arcu leo, blandit quis venenatis feugiat, ultrices ac eros. Aenean tincidunt tortor nisl, at venenatis urna convallis eget. Sed elementum ornare tempus. Ut eget augue nec lacus finibus bibendum. Fusce quis ligula quis leo aliquam sollicitudin. Quisque lectus turpis, mattis at arcu sed, porttitor auctor mauris. Vivamus sed tortor rutrum, congue sem vel, mollis dui. Suspendisse potenti. Vestibulum eget urna massa.

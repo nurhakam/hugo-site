@@ -1,4 +1,3 @@
-<script>
 // shrink navbar when scrolling
 window.onscroll = function() {scrollFunction()};
 
@@ -43,4 +42,3 @@ function toggleTheme() {
     themeIcon.src = darkIcon;
   }
 })();
-</script>
